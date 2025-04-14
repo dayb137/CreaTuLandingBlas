@@ -1,13 +1,23 @@
-const ItemListContainer = ({ greeting }) => {
+import React, { useEffect, useState } from "react";
+import { getArticulos } from "../../asyncmock";
+import ItemList from "../ItemList/ItemList";
+import "./ItemListContainer.css"
+
+const ItemListContainer = () => {
+  const [articulos, setArticulos] = useState([]);
+
+  useEffect(() => {
+    getArticulos()
+      .then(respuesta => setArticulos(respuesta))
+      .catch(error => console.log(error));
+  }, []);
+
   return (
-    <div className="item-list-container">
-      <div className="greeting-section">
-        <h1>{greeting}</h1>
-      </div>
-      <div className="products-grid">
-        <p>Próximamente: Catálogo de productos</p>
-      </div>
-    </div>
+    <>
+      <h2 className="articulosTitulo"> Articulos </h2>
+      <ItemList articulos={articulos}/>
+    </>
   );
 };
+
 export default ItemListContainer;

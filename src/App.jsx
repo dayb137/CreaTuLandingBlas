@@ -1,14 +1,16 @@
-import { useState } from "react";
+
 import "./App.css";
-import NavBar from "./componentes/NavBar/NavBar";
 import ItemListContainer from "./componentes/ItemListContainer/ItemListContainer";
+import NavBar from "./componentes/NavBar/NavBar";
+
 
 const App = () => {
   return (
     <>
       <NavBar />
+      <ItemListContainer/>
 
-      <ItemListContainer greeting="Bienvenidos a la tienda hesoterica" />
+      
     </>
   );
 };

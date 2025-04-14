@@ -13,6 +13,10 @@ header img {
     max-width: 150px;
 }
 
+.logoEsoterica {
+    max-width: 160px;
+}
+
 nav {
     flex-grow: 1;
     display: flex;
@@ -44,13 +48,13 @@ nav ul li::after {
     height: 2px;
     bottom: -5px;
     left: 0;
-    background-color: #8b4513;
+    background-color: #8d629a;
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
 
 nav ul li:hover {
-    color: #8b4513;
+    color: #8d629a;
 }
 
 nav ul li:hover::after {
