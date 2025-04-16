@@ -1,13 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const Item = ({nombre, precio, img}) => {
+const Item = ({id,nombre, precio, img}) => {
   return (
-    <div className="itemCard">
-        <img src={img} alt={nombre}/>
-        <div className="itemCardContent"></div>
+    <div >
+        <img src= {img} alt= {nombre}/>
+        <div></div>
         <h3>Articulo: {nombre}</h3>
-        <p>Precio: ${precio}</p>
+        <p>Precio: {precio}</p>
+        <Link to={'/item/${id}'}>
         <button>Ver Detalle</button>
+        </Link>
     </div>
   )
 }
