@@ -1,22 +1,7 @@
-.widget-carrito {
+.widgetCarrito {
     display: flex;
     align-items: center;
     cursor: pointer;
     position: relative;
   }
   
-  .contador-carrito {
-    position: absolute;
-    top: -8px;
-    right: -8px;
-    background-color: #8b4513;
-    color: white;
-    border-radius: 50%;
-    width: 18px;
-    height: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.7rem;
-    font-weight: bold;
-  }

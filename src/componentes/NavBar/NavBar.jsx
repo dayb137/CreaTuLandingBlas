@@ -4,23 +4,23 @@ import "./NavBar.css"
 
 const NavBar = () => {
   return (
-    <header>
+    <header className='Header'>
       <Link to="/">
         <img className='logoEsoterica'src={"./img/esoterica.png"} alt="logo esoterica" />
       </Link>
-        <nav>
+        <nav className='Nav'>
             <ul>
                 <li> 
-                  <NavLink to ="/"> Inicio </NavLink>
+                  <NavLink className={"NavLink"} to ="/"> Inicio </NavLink>
                   </li>
                 <li> 
-                  <NavLink to ="categoria/mazosTarot"> Mazos de Tarot </NavLink>   
+                  <NavLink className={"NavLink"} to ="categoria/mazosTarot"> Mazos de Tarot </NavLink>   
                   </li>
                 <li>
-                  <NavLink to ="categoria/oraculos"> Oráculos </NavLink>  
+                  <NavLink className={"NavLink"} to ="categoria/oraculos"> Oráculos </NavLink>  
                   </li>
                 <li>
-                  <NavLink to ="categoria/proteccion">Protección</NavLink>  
+                  <NavLink className={"NavLink"} to ="categoria/proteccion" >Protección</NavLink>  
                 </li>
             </ul>
         </nav>

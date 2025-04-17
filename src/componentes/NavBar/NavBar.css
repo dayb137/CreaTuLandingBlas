@@ -1,5 +1,5 @@
 
-header {
+.Header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -8,7 +8,7 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-header img {
+.Header img {
     max-height: 50px;
     max-width: 150px;
 }
@@ -17,13 +17,13 @@ header img {
     max-width: 160px;
 }
 
-nav {
+.Nav {
     flex-grow: 1;
     display: flex;
     justify-content: center;
 }
 
-nav ul {
+.Nav ul {
     display: flex;
     list-style-type: none;
     gap: 2rem;
@@ -31,7 +31,7 @@ nav ul {
     padding: 0;
 }
 
-nav ul li {
+.Nav ul li {
     font-family: 'Arial', sans-serif;
     font-size: 1rem;
     color: #333;
@@ -41,7 +41,7 @@ nav ul li {
     transition: color 0.3s ease;
 }
 
-nav ul li::after {
+.Nav ul li::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -53,11 +53,14 @@ nav ul li::after {
     transition: transform 0.3s ease;
 }
 
-nav ul li:hover {
+.Nav ul li:hover {
     color: #8d629a;
 }
 
-nav ul li:hover::after {
+.Nav ul li:hover::after {
     transform: scaleX(1);
 }
 
+.NavLink {
+    text-decoration: none;
+}

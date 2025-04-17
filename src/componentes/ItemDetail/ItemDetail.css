@@ -1,0 +1,64 @@
+.CardArticulo {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 16px;
+    background: linear-gradient(to bottom, #ffffff, #f7fafc);
+  }
+  
+  .CardArticulo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .ArtImage {
+    height: 240px;
+    overflow: hidden;
+  }
+  
+  .ArtImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .ArtImage img:hover {
+    transform: scale(1.05);
+  }
+  
+  .ArtInfo {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .ArtNombre {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin: 0;
+  }
+  
+  .ArtPrecio {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #161618;
+    margin: 0;
+  }
+  
+  .ArtDescripcion {
+    color: #4a5568;
+    line-height: 1.6;
+    margin-top: 8px;
+  }
+  
+ 
+  
+ 

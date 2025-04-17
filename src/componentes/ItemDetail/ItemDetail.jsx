@@ -1,26 +1,21 @@
-import React, { useState } from 'react'
-import ItemCount from '../ItemCount/ItemCount'
+import React from 'react'
+import './ItemDetail.css'
 
-const ItemDetail = ({id, nombre, precio, img, descripcion, stock}) => {
-
-  const [agregarCantidad, setAgregarCantidad] = useState(0)
-
-  const manejadorCantidad= (cantidad) => {
-    setAgregarCantidad(cantidad)
-    console.log("productos agregados:" + cantidad)
-  }
+const ItemDetail = ({nombre, precio, img, descripcion}) => {
     
   return (
-    <div>
-        <h2>Nombre: {nombre} </h2>
-        <h3>Precio: ${precio} </h3>
+    <div className='CardAarticulo'>
+        <div className='ArtImage'>
         <img src={img} alt={nombre}/>
+        </div>
+    <div className='ArtInfo'>
+      
+        <h2 >Nombre: {nombre} </h2>
+        <h3 >Precio: ${precio} </h3>
         <p>Descripcion:{descripcion}</p>
-        
 
-        {
-          agregarCantidad > 0 ?( <Link to="/cart"> Terminar Compra</Link> ) : ( <ItemCount inicial={1} stock={stock} funcionAgregar={manejadorCantidad}/> )
-        }
+    </div>
+        
         
     </div>
   )

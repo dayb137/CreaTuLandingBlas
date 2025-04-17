@@ -3,7 +3,7 @@ import "./CartWidget.css";
 
 const CartWidget = () => {
   return (
-    <div className="widget-carrito">
+    <div className="widgetCarrito">
       <ShoppingCart size={24} strokeWidth={2} />
     </div>
   );
