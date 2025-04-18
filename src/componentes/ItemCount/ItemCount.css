@@ -1,0 +1,27 @@
+.ItemCountContainer {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.Controls button{
+    padding: 6px 10px;
+    font-size: 0.9 rem;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: background-color 0.3 ease;
+    margin: 0 5px;
+}
+
+.Controls button:hover {
+    background-color: #eee;
+
+}
+
+.Controls p {
+    margin: 0 10px;
+    font-size: 1rem;
+}

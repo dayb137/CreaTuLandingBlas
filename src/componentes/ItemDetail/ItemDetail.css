@@ -1,15 +1,17 @@
-.CardArticulo {
-    display: flex;
-    flex-direction: column;
-    max-width: 350px;
-    overflow: hidden;
-    border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin: 16px;
-    background: linear-gradient(to bottom, #ffffff, #f7fafc);
-  }
+.CardAarticulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 600px; 
+  margin-left: auto;
+  margin-right: auto;
+}
   
   .CardArticulo:hover {
     transform: translateY(-5px);
@@ -17,47 +19,49 @@
   }
   
   .ArtImage {
-    height: 240px;
-    overflow: hidden;
-  }
-  
-  .ArtImage img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    background-color: #eee; 
   }
   
-  .ArtImage img:hover {
+  .ArtImage:hover {
     transform: scale(1.05);
   }
   
   .ArtInfo {
-    padding: 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
+  text-align: center;
+}
+
+.ArtInfo h2 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.ArtInfo h3 {
+  font-size: 1.8em;
+  color: #007bff; 
+  margin-bottom: 15px;
+}
+
+.ArtInfo p {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.Links button {
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer
   
-  .ArtNombre {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #2d3748;
-    margin: 0;
-  }
-  
-  .ArtPrecio {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #161618;
-    margin: 0;
-  }
-  
-  .ArtDescripcion {
-    color: #4a5568;
-    line-height: 1.6;
-    margin-top: 8px;
-  }
+
+}
   
  
   
