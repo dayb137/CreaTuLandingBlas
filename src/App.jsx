@@ -5,6 +5,7 @@ import ItemListContainer from "./componentes/ItemListContainer/ItemListContainer
 import ItemDetailContainer from "./componentes/ItemDetailContainer/ItemDetailContainer";
 import Error404 from "./componentes/error404/error404";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { CartProvider } from "./context/CartContext";
 
 
 const App = () => {
@@ -12,6 +13,7 @@ const App = () => {
     <>
       
       <BrowserRouter>
+      <CartProvider>
         <NavBar/>
         <Routes>
           <Route path='/' element={<ItemListContainer/>}/>
@@ -19,6 +21,7 @@ const App = () => {
           <Route path='/item/:idItem' element={<ItemDetailContainer/>}/>
           <Route path='*' element={<Error404/>}/>
         </Routes>      
+      </CartProvider>
       </BrowserRouter>
 
       
