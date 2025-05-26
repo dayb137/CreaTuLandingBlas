@@ -1,10 +1,8 @@
-import React, { useState, useContext} from "react";
+import { useState } from "react";
 import "./ItemCount.css";
-import { CartContext } from "../../context/CartContext";
 
-const ItemCount = ({ stock, inicial = 1, item  }) => {
+const ItemCount = ({ stock, inicial = 1, onAdd }) => {
   const [contador, setContador] = useState(inicial);
-  const {addItem} = useContext(CartContext)
 
   const incrementar = () => {
     if (contador < stock) {
@@ -18,21 +16,19 @@ const ItemCount = ({ stock, inicial = 1, item  }) => {
     }
   };
 
- 
-
-  const agregarAlCarrito = () => {
-    if (stock > 0) {
-      addItem(item , contador);
-    }
-  };
-
   return (
-    <div className="ItemCountContainer">
-      <button onClick={decrementar}> - </button>
-      <p>{contador}</p>
-      <button onClick={incrementar}> + </button>
-      <button onClick={agregarAlCarrito}>Agregar al carrito</button>
-
+    <div className="itemCountContainer">
+      <div className="botones">
+        <button onClick={decrementar}> - </button>
+        <p>{contador}</p>
+        <button onClick={incrementar}> + </button>
+        <button
+          className="botonAgregarAlCarrito"
+          onClick={() => onAdd(contador)}
+        >
+          Agregar al carrito
+        </button>
+      </div>
     </div>
   );
 };

@@ -1,12 +1,43 @@
-# React + Vite
+# 🔮 ESOTERICA - Tienda Holística
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Esotérica** es una tienda online enfocada en articulos holísticos, creada como proyecto final del curso de **React JS**. Se trata de una aplicación intuitiva y ligera que permite realizar pedidos en línea de forma simple.
 
-Currently, two official plugins are available:
+El proyecto utiliza **Firebase** para gestionar los articulos disponibles y almacenar las órdenes de compra generadas por los usuarios.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+
+## ✨ Tecnologías Utilizadas
+
+- ⚛️ React JS
+- 🛒 Context API para la gestión global del carrito
+- 🔥 Firebase Firestore para base de datos en tiempo real
+- 📦 React Router DOM para navegación entre vistas
+- 🧾 Validación de formularios en el checkout
+- 🔔 Notificaciones con `react-toastify`
+- 🎨 Estilos personalizados con CSS y Bootstrap
+- ⚡ Vite 
+
+---
+
+## ⚙️ Funcionalidades
+
+- 🛍️ Listado de articulos holísticos disponibles
+- ➕ Agregar articulos al carrito
+- 🗑️ Eliminar articulos o vaciar todo el carrito
+- 📋 Formulario de checkout con validación de datos
+- 🧾 Generación de orden de compra almacenada en Firebase
+- 🔄 Actualización automática del stock en Firestore
+- ✅ Confirmación visual mediante notificaciones
+- 💡 Interfaz amigable y simple
+---
+
+
+
+
+
+
+
 
 ## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+

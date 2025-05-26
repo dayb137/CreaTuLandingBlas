@@ -1,4 +1,4 @@
-.ItemCard {
+.itemCard {
     display: inline-block;
     border-radius: 8px;
     overflow: hidden;
@@ -9,12 +9,12 @@
     margin: 16px;
   }
   
-  .ItemCard:hover {
+  .itemCard:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
   }
   
-  .ItemCard img {
+  .itemCard img {
     margin-top: 10px;
     padding: 10px 10px;
     width: 100%;
@@ -24,26 +24,26 @@
     border-radius: 5px;
   }
   
-  .ItemCardContent {
+  .itemCardContent {
     display: flex;
     flex-direction: column;
     padding: 20px;
   }
   
-  .ItemCard h3 {
+  .itemCard h3 {
     margin: 8px ;
     font-size: 18px;
     font-weight: 600;
     color: #8d629a;
   }
   
-  .ItemCard p {
+  .itemCard p {
     margin:16px ;
     font-size: 16px;
     color: #12100f;
   }
   
-  .ItemCard button {
+  .itemCard button {
     background-color: #9c7ea5;
     color: white;
     border: none;
@@ -56,7 +56,7 @@
     width: 100%;
   }
   
-  .ItemCard button:hover {
+  .itemCard button:hover {
     background-color: #8d629a;
   }
   

@@ -1,27 +1,59 @@
-.ItemCountContainer {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
+.itemCountContainer {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 320px;
+  margin: 20px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.Controls button{
-    padding: 6px 10px;
-    font-size: 0.9 rem;
+.itemCountContainer p {
+  font-size: 16px;
+  margin-bottom: 16px;
+  color: #141313;
+  font-weight: bold;
+
+
+}
+
+.botones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.botones button {
+    
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  background-color: #f3f3f3;
+  color: #333;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.botones button:hover {
+  background-color: #e0e0e0;
+}
+
+.botonAgregarAlCarrito{
+    padding: 10px 20px;
+    border: none;
+    background-color: #a99bad;
+    color: white;
+    border-radius: 6px;
     cursor: pointer;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #fff;
-    transition: background-color 0.3 ease;
-    margin: 0 5px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
-.Controls button:hover {
-    background-color: #eee;
-
-}
-
-.Controls p {
-    margin: 0 10px;
-    font-size: 1rem;
+.botonAgregarAlCarrito:hover{
+    background-color: #b5a8b8;
 }

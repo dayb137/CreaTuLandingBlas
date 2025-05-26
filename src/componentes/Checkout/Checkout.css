@@ -1,0 +1,81 @@
+.checkoutContainer {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fafafa;
+  border: 1px solid #eaeaea;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.checkoutContainer h2 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c2c2c;
+}
+
+.checkoutForm {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.checkoutForm input {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.checkoutForm input:focus {
+  border-color: #c973d4;
+  outline: none;
+}
+
+.checkoutForm button {
+  background-color: #8d629a56;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.checkoutForm button:hover {
+  background-color: #8d629a;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.resumenContainer {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #eaeaea;
+}
+
+.resumenContainer h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.resumenContainer p {
+  font-size: 14px;
+  color: #444;
+  margin: 4px 0;
+}
+
+.resumenContainer h4 {
+  font-size: 16px;
+  margin-top: 12px;
+  font-weight: 500;
+}

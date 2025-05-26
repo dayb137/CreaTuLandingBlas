@@ -1,5 +1,5 @@
 
-.Header {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -8,22 +8,22 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.Header img {
+.header img {
     max-height: 50px;
     max-width: 150px;
 }
 
-.logoEsoterica {
+.hogoEsoterica {
     max-width: 160px;
 }
 
-.Nav {
+.nav {
     flex-grow: 1;
     display: flex;
     justify-content: center;
 }
 
-.Nav ul {
+.nav ul {
     display: flex;
     list-style-type: none;
     gap: 2rem;
@@ -31,7 +31,7 @@
     padding: 0;
 }
 
-.Nav ul li {
+.nav ul li {
     font-family: 'Arial', sans-serif;
     font-size: 1rem;
     color: #333;
@@ -41,7 +41,7 @@
     transition: color 0.3s ease;
 }
 
-.Nav ul li::after {
+.nav ul li::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -53,14 +53,14 @@
     transition: transform 0.3s ease;
 }
 
-.Nav ul li:hover {
+.nav ul li:hover {
     color: #8d629a;
 }
 
-.Nav ul li:hover::after {
+.nav ul li:hover::after {
     transform: scaleX(1);
 }
 
-.NavLink {
+.navLink {
     text-decoration: none;
 }

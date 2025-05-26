@@ -1,0 +1,23 @@
+.spinnerCustom {
+  width: 4rem;
+  height: 4rem;
+  color: #603c76;
+  border-width: 0.35em;
+  border-style: solid;
+  border-color: #603c76 transparent transparent transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  display: block;
+  margin: 4rem auto;
+  box-shadow: 0 0 8px rgba(96, 60, 118, 0.7);
+}
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
